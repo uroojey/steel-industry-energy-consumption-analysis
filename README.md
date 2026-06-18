@@ -15,17 +15,24 @@ This project provides a professional-grade solution for forecasting energy consu
 ```
 Steel Industry Energy Consumption Analysis/
 │
-├── .venv/                 # Python virtual environment (ignored by Git)
-├── .vscode/               # VS Code project-specific settings
-├── data/                  # Contains the raw steel industry dataset
-│   └── Steel_industry_data.csv
-├── notebooks/             # Jupyter notebooks for EDA and modeling
-│   └── explore.ipynb
-├── src/                   # Python source code for modular analysis
-│   └── analysis.py
-├── .gitignore             # Configuration to keep the repository clean
-├── README.md              # Project documentation
-└── requirements.txt       # Project dependencies
+├── .gitignore
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── raw/               # Original, immutable CSV/data files 
+│   └── processed/         # Cleaned/engineered data here
+│
+├── notebooks/
+│   └── explore.ipynb      # For EDA & Jupyter-based experiments
+│
+├── src/                   # Reusable production code
+│   ├── config.py
+│   ├── preprocess.py
+│   └── model.py
+│
+└── tests/
+    └── __init__.py
 ```
 
 ## Setup Instructions

@@ -2,6 +2,7 @@
 
 # Simple string path to your dataset file
 DATA_PATH = "../data/raw/Steel_industry_data.csv"
+PROCESSED_DATA_PATH = "../data/processed/cleaned_steel_data.csv"
 
 # The name of the column we want to predict
 TARGET = "Usage_kWh"
